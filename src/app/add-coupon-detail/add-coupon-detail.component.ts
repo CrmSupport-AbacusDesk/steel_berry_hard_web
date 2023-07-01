@@ -14,7 +14,7 @@ export class AddCouponDetailComponent implements OnInit {
   print_coupon: any = {};
   coupon_id: any;
   id: any;
-
+  elementType:any;
 
   constructor(public db: DatabaseService,  public dialog: DialogComponent,private route: ActivatedRoute) {
     this.route.params.subscribe(params => {
