@@ -10,11 +10,10 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class AddCouponDetailComponent implements OnInit {
 
-  value = 'Techiediaries';
-  print_coupon: any = {};
+  print_coupon: any =[];
   coupon_id: any;
   id: any;
-  elementType:any;
+  elementType = 'url';
 
   constructor(public db: DatabaseService,  public dialog: DialogComponent,private route: ActivatedRoute) {
     this.route.params.subscribe(params => {
@@ -52,19 +51,47 @@ export class AddCouponDetailComponent implements OnInit {
           margin-bottom: 0px
         }
         @page { 
-          margin: 0.07in 0.1in 0.00in;  
+          margin: 0.00in 0.00in 0.00in 0.00in;  
         }
         
         .bar-code-img, .barcode{
           
-          width:105px !important;
-          min-width:105px !important;
-          height: 110px !important;
+          width:40px !important;
+          min-width:40px !important;
+          height: 40px !important;
         }
         .barcode svg{
           width: 100%;
           height: 100%;
         }
+        .qr_img img {
+          width: 35px !important;
+          height: 35px !important;
+          margin-top: 30px !important;
+          // margin-left: 5px !important;
+      }
+      
+      
+  //     .ea_img img {
+  //       width: 60px !important;
+  //       height: 130px !important;
+  //       object-fit: contain !important;
+  //       rotate: 359deg !important;
+  //       margin-top: 20px !important;
+  //   }
+    
+
+  //   .ea_img_new img {
+  //     width: 60px !important;
+  //     height: 100px !important;
+  //     object-fit: contain !important;
+  //     rotate: 359deg !important;
+  //     margin-top: 15px !important;
+  // }
+
+
+
+      
         
         body
         {
