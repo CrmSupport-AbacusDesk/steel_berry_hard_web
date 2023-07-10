@@ -8685,8 +8685,8 @@ h2.hed_mr {
 
 
 .prnt_prt {
-    height: 140px !important;
-    border: 2px solid #000;
+    // height: 140px !important;
+    // border: 2px solid #000;
     justify-content: space-between;
     margin-top: 4px !important;
 }
@@ -8705,3 +8705,54 @@ h2.hed_mr {
 .tp_bg h2 {
     color: #fff !important;
 }
+
+
+h2.hed_mr {
+    border-bottom: 2px solid green;
+    padding-bottom: 7px;
+    padding-left: 12px;
+}
+.mrdrt {
+    height: 146px;
+}
+.mat-dialog-container {
+
+    overflow: unset !important; 
+ 
+ }
+
+ button.bt_pr {
+    margin-right: 10px;
+}
+.gft_img {
+    height: 100%;
+}
+
+
+// .prnt_prt {
+//     height: 200px !important;
+// }
+
+.ic_prt {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.qr_img img {
+    width: 35px !important;
+    height: 35px !important;
+    margin-top: 30px !important;
+    // margin-left: 5px !important;
+}
+
+
+
+.aclass {
+    text-align: center !important;
+}
+
+.prt_txt {
+    text-align: center;
+}
+
+
