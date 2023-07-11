@@ -66,7 +66,7 @@
               <h2>QR CODE</h2>
             </div>
 
-            <div class="card card-statistics" style="width: 50%;margin-left: 250px;margin: 0 auto;"  hidden>
+            <div class="card card-statistics" style="width: 50%;margin-left: 250px;margin: 0 auto;" hidden >
               <div id="print_card">
                 <div id='qr_code_container' >
 
@@ -78,6 +78,11 @@
 
 
                     <div class="qr_img" *ngFor="let row of print_coupon" style="width: 188.97637795px; height: 94.488188976px;padding-top: 0px;text-align: center;">
+
+                      <div class="st_im_p">
+                        <img src="https://apps.abacusdesk.com/steelberryhardware/dd_api/app/uploads/Org/logo.png" alt="">
+                      </div>
+
                       <ngx-qrcode [elementType]="elementType" value="{{row.coupon_code}}" cssClass="aclass qr_img" errorCorrectionLevel="L">
                       </ngx-qrcode>
                       <p style="font-family: 'Roboto', sans-serif;font-size: 10px;margin:0;"><strong>{{row.product_point_group}}</strong></p>
@@ -96,7 +101,11 @@
 
               <div class="col s3" *ngFor="let row of print_coupon">
 
-                <div class="card mt10" style="border: 1px solid;height: 185px;">
+                <div class="card mt10" style="border: 1px solid;height: 240px;">
+
+<div class="stl_img">
+  <img src="assets/logo.png">
+</div>
 
                   <div class="prnt_brc m0" >
       
